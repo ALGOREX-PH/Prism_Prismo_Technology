@@ -69,7 +69,7 @@ if options == "Home" :
     st.write("Prism is not just a chatbot but a vital link between users and the cutting-edge technology that Prismo Technology represents. It plays a crucial role in making complex security and blockchain concepts accessible, reinforcing Prismo's dedication to transparency and security.")
 
 elif options == "Prism" :
-     dataframed = pd.read_csv('Dataset\Prismo_Knowledgebase.csv')
+     dataframed = pd.read_csv('https://raw.githubusercontent.com/ALGOREX-PH/Prism_Prismo_Technology/refs/heads/main/Dataset/Prismo_Knowledgebase.csv')
      print(dataframed)
      documents = dataframed['content'].tolist()
      embeddings = [get_embedding(doc, engine = "text-embedding-3-small") for doc in documents]
